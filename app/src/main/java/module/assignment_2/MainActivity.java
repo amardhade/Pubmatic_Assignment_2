@@ -42,7 +42,7 @@ public class MainActivity extends ActionBarActivity {
             splitStrLength = splitStrLength + splitStr.length();
         Log.v(TAG, "Split Length: " + splitStrLength);
 
-        final int occurance = ((mGivenString.length() - splitStrLength) / mGivenPattern.length());
-        Log.v(TAG, "Occurrences: " + occurance);
+        final int occurrence = ((mGivenString.length() - splitStrLength) / mGivenPattern.length());
+        Log.v(TAG, "Occurrences: " + occurrence);
     }
 }
