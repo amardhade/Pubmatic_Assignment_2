@@ -22,6 +22,19 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        /**
+         * Question:
+         * find out the occurrences of mGivenPattern from mGivenString
+         *
+         * Logic:
+         * Split the mGivenString from a mGivenPattern
+         * get the length of split string array
+         * get pattern occurrence string length from mGivenString by replacing the length of split string array which will be
+         * perfectly divisible by mGivenPattern string length,
+         * At last divide occurrence string length by mGivenPattern string length, the resultant quotient will be the ans.
+         *
+         */
         int splitStrLength = 0;
         String[] str = mGivenString.split(mGivenPattern);
 
