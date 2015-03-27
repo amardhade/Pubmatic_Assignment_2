@@ -2,7 +2,7 @@ package module.assignment_2;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
+import android.widget.Toast;
 
 
 /**
@@ -40,9 +40,9 @@ public class MainActivity extends ActionBarActivity {
 
         for (String splitStr : str)
             splitStrLength = splitStrLength + splitStr.length();
-        Log.v(TAG, "Split Length: " + splitStrLength);
 
         final int occurrence = ((mGivenString.length() - splitStrLength) / mGivenPattern.length());
-        Log.v(TAG, "Occurrences: " + occurrence);
+
+        Toast.makeText(this, "Pattern occurrence count: " + occurrence, Toast.LENGTH_SHORT).show();
     }
 }
